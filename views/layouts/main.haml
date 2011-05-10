@@ -1,0 +1,42 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:"charset" => "UTF-8"}
+    %meta{:"http-equiv" => "Content-Type", "content" => "text/html; charset=UTF-8"}
+    %meta{:"name" => "description", "content" => "Description String"}
+    %meta{:"name" => "keywords", "content" => "Keywords"}
+    %meta{:"name" => "author", "content" => "Autho's Name"}
+    %meta{:"name" => "robots", "content" => "index,follow"}
+    %meta{:"name" => "copyright", "content" => "Copyright 2010-2011 Author's Name"}
+    %title blog.author
+   %link{:rel => "stylesheet", 
+		   :href => "/css/style.css",
+		   :type => "text/css",
+		   :media => "screen, print"}
+   %link{:rel => "stylesheet", 
+		   :href => "/css/prettify.css",
+		   :type => "text/css",
+		   :media => "screen"}
+   %link{:rel => "alternate", 
+		   :type => "application/rss+xml",
+		   :title => "blog.author RSS Feed",
+		   :href => "/feed"}
+   %script{:src => "/javascripts/prettify.js",
+		   :type => "text/javascript"}
+   %link{:rel => "index", 
+		   :title => "blog.author",
+		   :href => "/"}
+    %meta{:"name" => "generator", "content" => "Perl/Dancer"}
+  %body{:"onload" => "prettyPrint()"} 
+   #container
+    #content
+     != $content
+    #footer
+     %p
+      %a{:href => "/info"} info
+      \::
+      %a{:href => "/archive"} archive
+      \::
+      %a{:href => "/feed"} feed
+      \::
+      %a{:href => "/code"} code

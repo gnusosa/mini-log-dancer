@@ -1,0 +1,7 @@
+- foreach my $entry (@$list){
+- my $url = $entry->{url};
+   %tr{:class => "archive"}
+    %th= $entry->{datetime}
+    %td 
+     %a{:href => "#{$url}",}= $entry->{title}
+- };
