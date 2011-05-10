@@ -7,6 +7,20 @@ See http://www.perldancer.org/ for details on Dancer.
 See http://advent.perldancer.org/ for details on how I built 
 the blog engine on Perl Dancer.
 
+FEATURES
+
+It features an archive handler and a feed handler. 
+It lacks a comments section and categories.
+
+DEPENDENCIES
+
+The blog engine uses the following Perl modules: 
+
+	* Dancer::Plugin::Feed
+	* Dancer::Plugin::Database
+	* DateTime::Format::Strptime
+	* Time::Piece  
+
 LICENSE AND COPYRIGHT
 
 Copyright (C) 2011 Carlos Ivan Sosa
