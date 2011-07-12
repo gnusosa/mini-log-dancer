@@ -1,0 +1,42 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:"charset" => "UTF-8"}
+    %meta{:"http-equiv" => "Content-Type", "content" => "text/html; charset=UTF-8"}
+    %meta{:"name" => "description", "content" => "log.author.net is a minimalistic log by author."}
+    %meta{:"name" => "keywords", "content" => "Author keywords"}
+    %meta{:"name" => "author", "content" => "Author"}
+    %meta{:"name" => "robots", "content" => "index,follow"}
+    %meta{:"name" => "copyright", "content" => "Copyright 2010-2011 Author"}
+    %title log.author.net
+   %link{:rel => "stylesheet", 
+		   :href => "/css/code.css",
+		   :type => "text/css",
+		   :media => "screen, print"}
+   %link{:rel => "stylesheet", 
+		   :href => "/css/prettify.css",
+		   :type => "text/css",
+		   :media => "screen"}
+   %link{:rel => "alternate", 
+		   :type => "application/rss+xml",
+		   :title => "log.gnusosa.net RSS Feed",
+		   :href => "/feed"}
+   %script{:src => "/javascripts/prettify.js",
+		   :type => "text/javascript"}
+   %link{:rel => "index", 
+		   :title => "log.gnusosa.net",
+		   :href => "/"}
+    %meta{:"name" => "generator", "content" => "Perl/Dancer"}
+  %body{:"onload" => "prettyPrint()"} 
+   #container
+    #content
+     != $content
+    #footer
+     %p
+      %a{:href => "/info"} info
+      \::
+      %a{:href => "/archive"} archive
+      \::
+      %a{:href => "/feed"} feed
+      \::
+      %a{:href => "/code"} code
