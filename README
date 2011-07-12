@@ -7,10 +7,17 @@ See http://www.perldancer.org/ for details on Dancer.
 See http://advent.perldancer.org/ for details on how I built 
 the blog engine on Perl Dancer.
 
+See http://log.gnusosa.net/ for a working demo.
+My personal weblog. :D 
+
+
 FEATURES
 
 It features an archive handler and a feed handler. 
 It lacks a comments section and categories.
+
+There is a category logic built into it, but it requires
+some customization. You can find it in code.pm, and calls db.pm
 
 DEPENDENCIES
 
@@ -18,6 +25,7 @@ The blog engine uses the following Perl modules:
 
 	* Dancer::Plugin::Feed
 	* Dancer::Plugin::Database
+	* Dancer::Template::Haml
 	* DateTime::Format::Strptime
 	* Time::Piece  
 
