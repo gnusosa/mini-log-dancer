@@ -6,7 +6,7 @@ use log::code;
 use log::db;
 use log::feed;
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 prefix undef;
 
 # This is a mini-blog engine based on the notes and tips by
