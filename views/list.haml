@@ -1,7 +1,7 @@
 .post
  %h2
   %a{:href => "/"} log
-  \: 
+  \:
   %b= $title
  #pre-entry!= $text
  .entry
@@ -9,7 +9,7 @@
   - my $url = $_->{url};
   %h3
    %a{:href => "/#{$root}/#{$url}"}= $_->{title}
-  %span{:class => "date"}= $_->{datetime} 
-  %p{:class => "erb"}= $_->{description} 
+  %span{:class => "date"}= $_->{datetime}
+  %p{:class => "erb"}= $_->{description}
   - };
 %small
