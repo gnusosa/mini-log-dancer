@@ -3,18 +3,18 @@
 # all the settings in this file will be loaded at Dancer's startup.
 
 # Your application's name
-appname: "log"
+appname: 'log'
 author: Author Name
 domain: http://blog.author/
 
 # The default layout to use for your application (located in
 # views/layouts/main.tt)
-layout: "main"
+layout: 'main'
 
 # when the charset is set to UTF-8 Dancer will handle for you
 # all the magic of encoding and decoding. You should not care
 # about unicode within your app when this setting is set (recommended).
-charset: "UTF-8"
+charset: 'UTF-8'
 
 # You can use any template you wish. 
 # Please see 
@@ -25,8 +25,11 @@ charset: "UTF-8"
 # simple: default and very basic template engine
 # template_toolkit: TT
 
-template: "haml"
-
+template: 'haml'
+engines:
+  haml:
+    extension: 'haml'
+#
 # template: 
 # engines:
 #   template_toolkit:

@@ -33,8 +33,7 @@ sub _index_entry {
 
 get '/' => sub {
     my $field = _index_entry();
-    template
-      'index' => {
+    template 'index' => {
         'url'   => $field->{url},
         'title' => $field->{title},
         'text'  => $field->{text},
